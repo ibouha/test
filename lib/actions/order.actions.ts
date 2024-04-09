@@ -1,7 +1,7 @@
 import { CreateOrderParams } from "@/types";
-import connectToDatabase from "../database";
 import Order from "../database/models/order.model";
 import { handleError } from "../utils";
+import { connectToDatabase } from "../database";
 
 
 export const createOrder = async (order: CreateOrderParams) => {
